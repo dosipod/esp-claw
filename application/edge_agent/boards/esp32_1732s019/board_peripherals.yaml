@@ -1,0 +1,17 @@
+# Inside board_peripherals.yaml
+display:
+  driver: "st7789"
+  width: 170
+  height: 320
+  offset_x: 35        # CRITICAL: Fixes image shifting on the 1.9" panel
+  offset_y: 0
+  color_bgr: true     # Ensures colors aren't inverted/swapped
+  invert_colors: true 
+  pins:
+    miso: -1          # Not connected
+    mosi: 11          # SDA
+    sclk: 12          # SCL
+    cs: 10            # CS
+    dc: 13            # DC / RS
+    rst: 1            # RESET
+    backlight: 14     # BL
