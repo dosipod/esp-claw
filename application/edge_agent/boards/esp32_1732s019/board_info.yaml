@@ -1,0 +1,5 @@
+# Inside board_info.yaml
+board:
+  name: "esp32_1732s019"
+  vendor: "Custom"
+  description: "ESP32-S3 1.9 inch display board for ESP-Claw"
